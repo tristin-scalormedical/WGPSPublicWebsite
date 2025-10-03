@@ -41,6 +41,21 @@ function App() {
 
   return (
     <div style={{ backgroundColor: palette.background, color: palette.text, minHeight: '100vh' }}>
+      {/* Navbar */}
+      <nav className="shadow-md" style={{ backgroundColor: palette.primary }}>
+        <div className="max-w-6xl mx-auto px-6 py-4">
+          <div className="flex justify-between items-center">
+            <div className="text-white font-serif text-xl font-bold">Dr. Tina Caudill</div>
+            <div className="flex gap-6">
+              <a href="#" className="text-white hover:opacity-80 transition-opacity">Home</a>
+              <a href="#" className="text-white hover:opacity-80 transition-opacity">About</a>
+              <a href="#" className="text-white hover:opacity-80 transition-opacity">Services</a>
+              <a href="#" className="text-white hover:opacity-80 transition-opacity">Contact</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+
       {/* Color Palette Selector */}
       <div className="p-6 border-b border-gray-200 bg-white shadow-sm">
         <h2 className="text-lg font-serif font-semibold mb-4">Choose Color Palette:</h2>
@@ -61,140 +76,89 @@ function App() {
         </div>
       </div>
 
-      {/* Header */}
-      <header className="bg-white shadow-sm border-b border-gray-200">
-        <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <div className="flex-shrink-0">
-              <h1 className="text-xl font-serif font-bold" style={{ color: palette.primary }}>
-                Dr. Tina Caudill
-              </h1>
-              <p className="text-sm" style={{ color: palette.secondary }}>Clinical Psychologist</p>
-            </div>
-            <div className="hidden md:flex space-x-8">
-              {['Home', 'About', 'Services', 'Contact'].map((item) => (
-                <a
-                  key={item}
-                  href="#"
-                  className="text-sm font-medium hover:underline transition-colors"
-                  style={{ color: palette.text }}
-                >
-                  {item}
-                </a>
-              ))}
-            </div>
-          </div>
-        </nav>
-      </header>
-
       {/* Hero Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: palette.background }}>
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl sm:text-5xl font-serif font-bold mb-6" style={{ color: palette.primary }}>
-            Compassionate Care for Every Journey
+      <div className="max-w-3xl mx-auto py-16 px-8">
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-serif font-bold mb-4" style={{ color: palette.primary }}>
+            Dr. Tina Caudill
           </h1>
-          <p className="text-xl mb-8 max-w-2xl mx-auto" style={{ color: palette.text }}>
-            Specializing in childhood trauma and high functioning autism in girls,
-            providing professional, evidence-based therapeutic support.
+          <p className="text-lg" style={{ color: palette.text }}>Clinical Psychologist</p>
+        </div>
+
+        <div className="text-center mb-12">
+          <h2 className="text-2xl font-serif font-semibold mb-4" style={{ color: palette.primary }}>
+            Compassionate Care
+          </h2>
+          <p className="text-lg mb-6" style={{ color: palette.text }}>
+            Specializing in childhood trauma and high functioning autism in girls
           </p>
           <button
-            className="px-8 py-3 rounded-md font-medium text-white hover:opacity-90 transition-opacity"
+            className="px-6 py-3 rounded-md font-medium text-white hover:opacity-90 transition-opacity"
             style={{ backgroundColor: palette.primary }}
           >
             Schedule Consultation
           </button>
         </div>
-      </section>
 
-      {/* Services Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-serif font-bold text-center mb-12" style={{ color: palette.primary }}>
-            Areas of Expertise
-          </h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="p-6 rounded-lg border border-gray-200">
-              <h3 className="text-xl font-serif font-semibold mb-4" style={{ color: palette.secondary }}>
-                Childhood Trauma Therapy
-              </h3>
-              <p style={{ color: palette.text }}>
-                Specialized treatment for children who have experienced trauma,
-                using evidence-based approaches to promote healing and resilience.
-              </p>
-            </div>
-            <div className="p-6 rounded-lg border border-gray-200">
-              <h3 className="text-xl font-serif font-semibold mb-4" style={{ color: palette.secondary }}>
-                High Functioning Autism in Girls
-              </h3>
-              <p style={{ color: palette.text }}>
-                Expert assessment and support for girls on the autism spectrum,
-                addressing unique challenges and building on individual strengths.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* About Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8" style={{ backgroundColor: palette.background }}>
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-serif font-bold text-center mb-8" style={{ color: palette.primary }}>
-            About Dr. Tina Caudill
-          </h2>
-          <div className="prose prose-lg mx-auto" style={{ color: palette.text }}>
-            <p>
-              Dr. Tina Caudill is a licensed clinical psychologist with extensive experience
-              in treating childhood trauma and working with girls on the autism spectrum.
-              Her approach combines evidence-based therapeutic techniques with a deep
-              understanding of individual needs.
+        {/* Feature Cards */}
+        <div className="grid md:grid-cols-3 gap-6 mb-12">
+          <div
+            className="p-6 rounded-lg shadow-md"
+            style={{ backgroundColor: 'white', borderTop: `4px solid ${palette.accent}` }}
+          >
+            <h3 className="font-serif font-semibold text-lg mb-3" style={{ color: palette.primary }}>
+              Expert Care
+            </h3>
+            <p style={{ color: palette.text }}>
+              Over 15 years of experience in clinical psychology
             </p>
-            <p>
-              With a commitment to creating a safe, supportive environment, Dr. Caudill
-              helps clients develop coping strategies, build resilience, and achieve
-              their therapeutic goals.
+          </div>
+
+          <div
+            className="p-6 rounded-lg shadow-md"
+            style={{ backgroundColor: 'white', borderTop: `4px solid ${palette.secondary}` }}
+          >
+            <h3 className="font-serif font-semibold text-lg mb-3" style={{ color: palette.primary }}>
+              Specialized Focus
+            </h3>
+            <p style={{ color: palette.text }}>
+              Dedicated to childhood trauma and autism support
+            </p>
+          </div>
+
+          <div
+            className="p-6 rounded-lg shadow-md"
+            style={{ backgroundColor: 'white', borderTop: `4px solid ${palette.accent}` }}
+          >
+            <h3 className="font-serif font-semibold text-lg mb-3" style={{ color: palette.primary }}>
+              Safe Environment
+            </h3>
+            <p style={{ color: palette.text }}>
+              Creating a welcoming space for healing and growth
             </p>
           </div>
         </div>
-      </section>
 
-      {/* Contact Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-white">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-serif font-bold mb-8" style={{ color: palette.primary }}>
-            Get in Touch
-          </h2>
-          <p className="text-lg mb-8" style={{ color: palette.text }}>
-            Ready to begin your journey? Contact us to schedule a consultation.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button
-              className="px-6 py-3 rounded-md border-2 hover:opacity-90 transition-opacity"
-              style={{
-                borderColor: palette.primary,
-                color: palette.primary,
-                backgroundColor: 'transparent'
-              }}
-            >
-              Call (555) 123-4567
-            </button>
-            <button
-              className="px-6 py-3 rounded-md text-white hover:opacity-90 transition-opacity"
-              style={{ backgroundColor: palette.accent }}
-            >
-              Send Email
-            </button>
-          </div>
+        {/* Info Container */}
+        <div
+          className="p-8 rounded-lg shadow-lg mb-8"
+          style={{ backgroundColor: palette.secondary, color: 'white' }}
+        >
+          <h2 className="text-2xl font-serif font-semibold mb-4">Why Choose Our Practice?</h2>
+          <ul className="space-y-2">
+            <li>✓ Evidence-based therapeutic approaches</li>
+            <li>✓ Individualized treatment plans</li>
+            <li>✓ Trauma-informed care</li>
+            <li>✓ Family-centered support</li>
+          </ul>
         </div>
-      </section>
 
-      {/* Footer */}
-      <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-gray-200 bg-white">
-        <div className="max-w-6xl mx-auto text-center">
-          <p style={{ color: palette.secondary }}>
-            © 2024 Dr. Tina Caudill, Clinical Psychologist. All rights reserved.
+        <div className="text-center">
+          <p className="text-lg" style={{ color: palette.text }}>
+            Contact: (555) 123-4567
           </p>
         </div>
-      </footer>
+      </div>
     </div>
   )
 }
