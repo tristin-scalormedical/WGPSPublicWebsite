@@ -1,11 +1,6 @@
+import type { Palette } from "../types/palette"
 interface HomeProps {
-  palette: {
-    primary: string
-    secondary: string
-    accent: string
-    background: string
-    text: string
-  }
+  palette: Palette
 }
 
 export default function Home({ palette }: HomeProps) {
@@ -46,7 +41,7 @@ export default function Home({ palette }: HomeProps) {
                 key={index}
                 className="p-6 rounded-lg shadow-md text-center"
                 style={{
-                  backgroundColor: 'white',
+                  backgroundColor: palette.cardBg,
                   borderLeft: `6px solid ${palette.primary}`
                 }}
               >
@@ -91,7 +86,7 @@ export default function Home({ palette }: HomeProps) {
           <div
             className="p-8 rounded-lg shadow-md text-center"
             style={{
-              backgroundColor: 'white',
+              backgroundColor: palette.cardBg,
               borderTop: `6px solid ${palette.primary}`
             }}
           >

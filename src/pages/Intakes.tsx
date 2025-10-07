@@ -1,11 +1,6 @@
+import type { Palette } from "../types/palette"
 interface IntakesProps {
-  palette: {
-    primary: string
-    secondary: string
-    accent: string
-    background: string
-    text: string
-  }
+  palette: Palette
 }
 
 export default function Intakes({ palette }: IntakesProps) {
@@ -31,7 +26,7 @@ export default function Intakes({ palette }: IntakesProps) {
       {/* Services We Provide */}
       <div
         className="p-6 rounded-lg shadow-md mb-6"
-        style={{ backgroundColor: 'white', borderLeft: `6px solid ${palette.primary}` }}
+        style={{ backgroundColor: palette.cardBg, borderLeft: `6px solid ${palette.primary}` }}
       >
         <h2 className="text-2xl font-serif font-semibold mb-4" style={{ color: palette.primary }}>
           Services We Provide
@@ -51,7 +46,7 @@ export default function Intakes({ palette }: IntakesProps) {
       <div className="grid md:grid-cols-2 gap-6 mb-6">
         <div
           className="p-6 rounded-lg shadow-md"
-          style={{ backgroundColor: 'white', borderLeft: `6px solid ${palette.primary}` }}
+          style={{ backgroundColor: palette.cardBg, borderLeft: `6px solid ${palette.primary}` }}
         >
           <h2 className="text-xl font-serif font-semibold mb-3" style={{ color: palette.primary }}>
             Accepted Insurance
@@ -74,7 +69,7 @@ export default function Intakes({ palette }: IntakesProps) {
 
         <div
           className="p-6 rounded-lg shadow-md"
-          style={{ backgroundColor: 'white', borderLeft: `6px solid ${palette.primary}` }}
+          style={{ backgroundColor: palette.cardBg, borderLeft: `6px solid ${palette.primary}` }}
         >
           <h2 className="text-xl font-serif font-semibold mb-3" style={{ color: palette.primary }}>
             Testing Limitations
@@ -101,7 +96,7 @@ export default function Intakes({ palette }: IntakesProps) {
       <div className="grid md:grid-cols-2 gap-6 mb-6">
         <div
           className="p-6 rounded-lg shadow-md"
-          style={{ backgroundColor: 'white', borderLeft: `6px solid ${palette.secondary}` }}
+          style={{ backgroundColor: palette.cardBg, borderLeft: `6px solid ${palette.secondary}` }}
         >
           <h2 className="text-xl font-serif font-semibold mb-3" style={{ color: palette.primary }}>
             Therapy Referrals
@@ -120,7 +115,7 @@ export default function Intakes({ palette }: IntakesProps) {
 
         <div
           className="p-6 rounded-lg shadow-md"
-          style={{ backgroundColor: 'white', borderLeft: `6px solid ${palette.secondary}` }}
+          style={{ backgroundColor: palette.cardBg, borderLeft: `6px solid ${palette.secondary}` }}
         >
           <h2 className="text-xl font-serif font-semibold mb-3" style={{ color: palette.primary }}>
             Medication Management Referrals
@@ -150,7 +145,7 @@ export default function Intakes({ palette }: IntakesProps) {
       {/* Submit Referral */}
       <div
         className="p-8 rounded-lg shadow-lg text-center"
-        style={{ backgroundColor: 'white', borderTop: `4px solid ${palette.primary}` }}
+        style={{ backgroundColor: palette.cardBg, borderTop: `4px solid ${palette.primary}` }}
       >
         <h2 className="text-2xl font-serif font-semibold mb-4" style={{ color: palette.primary }}>
           Ready to Get Started?

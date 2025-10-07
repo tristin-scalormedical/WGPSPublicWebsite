@@ -1,11 +1,6 @@
+import type { Palette } from "../types/palette"
 interface LinksProps {
-  palette: {
-    primary: string
-    secondary: string
-    accent: string
-    background: string
-    text: string
-  }
+  palette: Palette
 }
 
 export default function Links({ palette }: LinksProps) {
@@ -63,7 +58,7 @@ export default function Links({ palette }: LinksProps) {
           <div
             key={index}
             className="p-8 rounded-lg shadow-md"
-            style={{ backgroundColor: 'white' }}
+            style={{ backgroundColor: palette.cardBg }}
           >
             <h2 className="text-2xl font-serif font-semibold mb-4" style={{ color: palette.primary }}>
               {category.title}

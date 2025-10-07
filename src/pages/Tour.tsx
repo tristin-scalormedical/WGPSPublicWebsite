@@ -1,11 +1,6 @@
+import type { Palette } from "../types/palette"
 interface TourProps {
-  palette: {
-    primary: string
-    secondary: string
-    accent: string
-    background: string
-    text: string
-  }
+  palette: Palette
 }
 
 export default function Tour({ palette }: TourProps) {
@@ -27,7 +22,7 @@ export default function Tour({ palette }: TourProps) {
       {/* Front Door Section */}
       <div
         className="mb-12 p-8 rounded-lg shadow-lg"
-        style={{ backgroundColor: 'white', borderTop: `4px solid ${palette.primary}` }}
+        style={{ backgroundColor: palette.cardBg, borderTop: `4px solid ${palette.primary}` }}
       >
         <div className="md:flex gap-8 items-center">
           <div className="md:w-1/2 mb-6 md:mb-0">
@@ -51,7 +46,7 @@ export default function Tour({ palette }: TourProps) {
           <div
             key={index}
             className="rounded-lg shadow-md overflow-hidden"
-            style={{ backgroundColor: 'white' }}
+            style={{ backgroundColor: palette.cardBg }}
           >
             <img
               src={photo.src}

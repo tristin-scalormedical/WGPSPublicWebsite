@@ -1,11 +1,6 @@
+import type { Palette } from "../types/palette"
 interface StaffProps {
-  palette: {
-    primary: string
-    secondary: string
-    accent: string
-    background: string
-    text: string
-  }
+  palette: Palette
 }
 
 export default function Staff({ palette }: StaffProps) {
@@ -54,16 +49,18 @@ export default function Staff({ palette }: StaffProps) {
           <div
             key={index}
             className="p-8 rounded-lg shadow-lg"
-            style={{ backgroundColor: 'white', borderTop: `4px solid ${palette.primary}` }}
+            style={{ backgroundColor: palette.cardBg, borderTop: `4px solid ${palette.primary}` }}
           >
             <div className="md:flex gap-8">
               {/* Image */}
               <div className="md:w-1/3 mb-6 md:mb-0">
-                <img
-                  src={staff.image}
-                  alt={staff.name}
-                  className="w-full h-64 object-cover rounded-lg shadow-md"
-                />
+                <div className="aspect-[3/4] w-full">
+                  <img
+                    src={staff.image}
+                    alt={staff.name}
+                    className="w-full h-full object-cover rounded-lg shadow-md"
+                  />
+                </div>
               </div>
 
               {/* Content */}

@@ -1,11 +1,6 @@
+import type { Palette } from "../types/palette"
 interface FooterProps {
-  palette: {
-    primary: string
-    secondary: string
-    accent: string
-    background: string
-    text: string
-  }
+  palette: Palette
 }
 
 export default function Footer({ palette }: FooterProps) {
