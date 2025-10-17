@@ -6,7 +6,7 @@ interface HomeProps {
 export default function Home({ palette }: HomeProps) {
   const areasOfFocus = [
     'Neurodiversity & Neuroatypicality',
-    'Higher Functioning Autism\nIncluding Females & Mild Presentations',
+    'The Autism Spectrum\nIncluding Females & Mild Presentations',
     'Depression and Mood Concerns',
     'Anxiety and Panic',
     'ADHD and Executive Functioning Issues'
@@ -62,10 +62,7 @@ export default function Home({ palette }: HomeProps) {
         <div className="max-w-5xl mx-auto">
           <blockquote className="text-white">
             <p className="text-lg md:text-xl leading-relaxed mb-6 text-center md:text-left">
-              "After working for decades with children and adults with neurodivergence, especially the autism spectrum and ADHD, it has become abundantly clear that diagnoses are not disorders or diseases, just a different way of being, processing information, and feeling.
-            </p>
-            <p className="text-lg md:text-xl leading-relaxed mb-6 text-center md:text-left">
-              Such labels are only vehicles for communication & intervention.
+              "After working for decades with children and adults with neurodivergence, especially the autism spectrum and ADHD, it has become abundantly clear that diagnoses are not disorders or diseases, just a different way of being, processing information, and feeling. Such labels are only vehicles for communication & intervention.
             </p>
             <p className="text-lg md:text-xl leading-relaxed mb-6 text-center md:text-left">
               Our goal with psychological testing is to increase awareness, education, and self-acceptance, not only in our clients, but their loved-ones and the whole community. Once individuals realize they are understood, valued, and unique with many strengths, this opens the door for healing, self-love, and the ability to express personal needs and feelings assertively."
@@ -77,24 +74,14 @@ export default function Home({ palette }: HomeProps) {
         </div>
       </div>
 
-      {/* Now Offering Section */}
-      <div
-        className="py-20 px-8"
-        style={{ backgroundColor: palette.accent, opacity: 0.95 }}
-      >
-        <div className="max-w-4xl mx-auto">
-          <div
-            className="p-8 rounded-lg shadow-md text-center"
-            style={{
-              backgroundColor: palette.cardBg,
-              borderTop: `6px solid ${palette.primary}`
-            }}
-          >
-            <h2 className="text-2xl md:text-3xl font-serif font-bold" style={{ color: palette.primary }}>
-              Now Offering: Materials and Training to Local Professionals on High Functioning Autism
-            </h2>
-          </div>
-        </div>
+      {/* Brain Image Section */}
+      <div className="py-16 px-8 text-center">
+        <img
+          src="/images/supplemental/double-brain_upscaled.png"
+          alt="Neurodiversity Brain Illustration"
+          className="mx-auto rounded-lg shadow-lg"
+          style={{ maxWidth: '700px', width: '100%' }}
+        />
       </div>
     </div>
   )

@@ -22,8 +22,9 @@ export default function Navbar({ palette }: NavbarProps) {
     <nav className="sticky top-0 z-50 shadow-md" style={{ backgroundColor: palette.primary }}>
       <div className="max-w-6xl mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <Link to="/" className="text-white font-serif text-xl font-bold">
-            Dr. Tina Caudill
+          <Link to="/" className="text-white font-serif">
+            <div className="text-xl font-bold">Dr. Tina M. Caudill</div>
+            <div className="text-sm opacity-90">Licensed Psychologist</div>
           </Link>
 
           {/* Desktop Navigation */}

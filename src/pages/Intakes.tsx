@@ -15,10 +15,10 @@ export default function Intakes({ palette }: IntakesProps) {
 
       {/* Important Notice */}
       <div
-        className="p-6 rounded-lg shadow-md mb-6"
-        style={{ backgroundColor: palette.accent, opacity: 0.95 }}
+        className="p-8 rounded-lg shadow-lg mb-8 border-4"
+        style={{ backgroundColor: palette.accent, borderColor: palette.primary }}
       >
-        <p className="text-white leading-relaxed">
+        <p className="text-white leading-relaxed text-lg font-bold">
           We are a small practice with only one provider, Dr. Tina Caudill, as well as one office manager. Our clients are very important, but we have been getting an overwhelming number of calls and referrals, so we have a very difficult time returning initial inquiry calls. Additionally, very few offices accept insurance for psych testing; therefore, we are typically booked for many months. Please read further!
         </p>
       </div>

@@ -92,7 +92,6 @@ function App() {
     text: '#E5E7EB',
     cardBg: '#1A2332'
   })
-  const [showCustomizer, setShowCustomizer] = useState(false)
 
   const palette = selectedPalette === 'custom'
     ? { ...customColors, name: 'Custom', isDark: false }

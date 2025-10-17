@@ -13,7 +13,7 @@ export default function Staff({ palette }: StaffProps) {
         'Dr. Caudill established West Georgia Psychological Services in 2006 and has been a licensed psychologist in the state of Georgia since 2005. She obtained a doctorate degree in psychology from the Georgia School of Professional Psychology with an emphasis in Child and Family. She also completed all masters level coursework in adult clinical psychology at the University of Dayton, OH. She has been on the board of the Georgia Psychological Association (GPA) and served as chair of several committees, including The Committee of Insurance and Managed Care and The Clinical Child and Adolescent Committee. Additionally, Dr. Caudill hosts a monthly peer consultation group for psychologists across Georgia specializing in psychological testing.',
         'Dr. Caudill has over two decades of experience in the assessment of neurodivergent populations, developmental disabilities, autism, and emotional problems in children, teens, and adults. Additionally, she specialized in trauma/abuse in her early career. Dr. Caudill currently focuses on psychological evaluations starting at the age of 6 through adulthood, as well as managing the practice to work in collaboration with the families and the community.'
       ],
-      image: '/images/staff/dr-caudill.jpg',
+      image: '/images/staff/dr-caudill-updated.jpg',
       vitae: '/documents/Dr_Caudill_Vitae.pdf'
     },
     {
