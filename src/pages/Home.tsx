@@ -19,9 +19,39 @@ export default function Home({ palette }: HomeProps) {
         <h1 className="text-5xl md:text-6xl font-serif font-bold mb-6" style={{ color: palette.primary }}>
           West Georgia Psychological Services
         </h1>
-        <p className="text-xl md:text-2xl max-w-4xl mx-auto" style={{ color: palette.secondary }}>
+        <p className="text-xl md:text-2xl max-w-4xl mx-auto mb-12" style={{ color: palette.secondary }}>
           Specializing in Comprehensive Psychological Testing from Young Children through Adults
         </p>
+
+        {/* Brain Image */}
+        <div style={{ position: 'relative', display: 'inline-block', padding: '30px' }}>
+          <div
+            style={{
+              position: 'absolute',
+              top: '50%',
+              left: '50%',
+              transform: 'translate(-50%, -50%)',
+              width: 'calc(100% + 5px)',
+              height: 'calc(100% + 5px)',
+              background: 'conic-gradient(from 0deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3, #ff0000)',
+              filter: 'blur(25px)',
+              opacity: 0.3,
+              borderRadius: '20px',
+              zIndex: 0
+            }}
+          />
+          <img
+            src="/images/supplemental/double-brain_upscaled.png"
+            alt="Neurodiversity Brain Illustration"
+            className="rounded-lg shadow-lg"
+            style={{
+              maxWidth: '700px',
+              width: '100%',
+              position: 'relative',
+              zIndex: 1
+            }}
+          />
+        </div>
       </div>
 
       {/* Areas of Focus Section */}
@@ -72,16 +102,6 @@ export default function Home({ palette }: HomeProps) {
             </footer>
           </blockquote>
         </div>
-      </div>
-
-      {/* Brain Image Section */}
-      <div className="py-16 px-8 text-center">
-        <img
-          src="/images/supplemental/double-brain_upscaled.png"
-          alt="Neurodiversity Brain Illustration"
-          className="mx-auto rounded-lg shadow-lg"
-          style={{ maxWidth: '700px', width: '100%' }}
-        />
       </div>
     </div>
   )
