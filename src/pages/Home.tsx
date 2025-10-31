@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import type { Palette } from "../types/palette"
 interface HomeProps {
   palette: Palette
@@ -51,6 +52,17 @@ export default function Home({ palette }: HomeProps) {
               zIndex: 1
             }}
           />
+        </div>
+
+        {/* Call to Action Button */}
+        <div className="mt-8">
+          <Link
+            to="/intakes"
+            className="inline-block px-8 py-4 rounded-lg font-semibold text-lg text-white transition-all duration-300 hover:shadow-xl hover:scale-105"
+            style={{ backgroundColor: palette.primary }}
+          >
+            Start Intake Now
+          </Link>
         </div>
       </div>
 

@@ -14,17 +14,7 @@ export default function Staff({ palette }: StaffProps) {
         'Dr. Caudill has over two decades of experience in the assessment of neurodivergent populations, developmental disabilities, autism, and emotional problems in children, teens, and adults. Additionally, she specialized in trauma/abuse in her early career. Dr. Caudill currently focuses on psychological evaluations starting at the age of 6 through adulthood, as well as managing the practice to work in collaboration with the families and the community.'
       ],
       image: '/images/staff/dr-caudill-updated.jpg',
-      vitae: '/documents/Dr_Caudill_Vitae.pdf'
-    },
-    {
-      name: 'Shanan Bailey',
-      position: 'Office Manager',
-      quote: null,
-      description: [
-        'Shanan Bailey is the office manager of West Georgia Psychological Services, and the backbone of the practice. She has held this position since 2016, and consistently shows a drive to increase her written and oral communication skills. Shanan is not only an efficient and detail-focused individual, but she is also kind and knowledgeable, especially about clients on the autism spectrum. Shanan has been consistently described as prompt, professional, and considerate by our clients, as she is the first line of communication at the practice. She consistently goes above and beyond for others, and our clients mention her dedication and extra effort often.'
-      ],
-      image: '/images/staff/shanan-bailey.jpeg',
-      vitae: null
+      vitae: '/documents/Professional Vitae-2025.pdf'
     },
     {
       name: 'Hillary Harrison, M.A. LMSW',
@@ -35,7 +25,17 @@ export default function Staff({ palette }: StaffProps) {
       ],
       image: '/images/staff/hillary-harrison.jpeg',
       vitae: null
-    }
+    },
+    {
+      name: 'Shanan Bailey',
+      position: 'Office Manager',
+      quote: null,
+      description: [
+        'Shanan is the dedicated office manager and the backbone of the practice, serving in this role since 2016. As the first point of contact, she enjoys engaging in daily interactions with clients, demonstrating her genuine kindness and desire to help others. Known for her efficiency, attention to detail, and positive, upbeat demeanor, Shanan consistently provides a professional and considerate experience for everyone she assists. She possesses a strong knowledge of autism spectrum disorder and is often praised by clients for her promptness, dedication, and willingness to go above and beyond. Her compassionate approach and unwavering commitment make her an invaluable member of the team.'
+        ],
+      image: '/images/staff/shanan-bailey.jpg',
+      vitae: null
+    },
   ]
 
   return (

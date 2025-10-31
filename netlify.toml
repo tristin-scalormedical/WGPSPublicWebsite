@@ -5,6 +5,14 @@
 [build.environment]
   NODE_VERSION = "22"
 
+# Force HTTPS redirect
+[[redirects]]
+  from = "http://*"
+  to = "https://:splat"
+  status = 301
+  force = true
+
+# SPA fallback
 [[redirects]]
   from = "/*"
   to = "/index.html"
