@@ -8,7 +8,7 @@ export default function Links({ palette }: LinksProps) {
     {
       title: 'Crisis Support',
       links: [
-        { name: 'National Suicide Hotlines: 1-800-SUICIDE or 1-800-273-TALK', url: 'http://www.suicidepreventionlifeline.org' },
+        { name: 'National Suicide Hotlines: 1-800-SUICIDE or 1-800-273-TALK', url: 'https://988lifeline.org/' },
         { name: 'S.H.A.R.E. House, Family Violence Crisis Center: 770-489-7513', url: 'http://www.sharehousedouglas.org' },
       ]
     },
@@ -16,7 +16,7 @@ export default function Links({ palette }: LinksProps) {
       title: 'Local Resources',
       links: [
         { name: 'Regional DFCS Child Abuse Reporting: 770-319-3700', url: 'http://www.dfcs.dhr.georgia.gov' },
-        { name: 'Georgia Medicaid (General Line): 404-298-1228', url: 'http://www.ghp.georgia.gov' },
+        { name: 'Georgia Medicaid (General Line): 404-298-1228', url: 'https://medicaid.georgia.gov/' },
         { name: 'Douglas County Board of Education', url: 'http://www.douglas.k12.ga.us' },
         { name: 'Douglas County Juvenile Court & Programs', url: 'http://www.celebratedouglascounty.com' },
       ]
