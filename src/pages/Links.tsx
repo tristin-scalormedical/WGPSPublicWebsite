@@ -24,7 +24,7 @@ export default function Links({ palette }: LinksProps) {
     {
       title: 'Child Development & Early Intervention',
       links: [
-        { name: "Babies Can't Wait (Early Intervention Services)", url: 'http://health.state.ga.us/programs/bcw' },
+        { name: "Babies Can't Wait (Early Intervention Services)", url: 'https://dph.georgia.gov/babies-cant-wait' },
         { name: 'Zero to Three, National Center for Infants, Toddlers & Families', url: 'http://www.zerotothree.org' },
       ]
     },
