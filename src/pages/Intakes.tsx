@@ -60,7 +60,7 @@ export default function Intakes({ palette }: IntakesProps) {
             <li>• Caresource</li>
             <li>• Peachstate (not Ambetter)</li>
             <li>• SSI Medicaid</li>
-            <li>• Self-Pay (Cost is approximately $1,350.00)</li>
+            <li>• Self-Pay (Cost is approximately $1,500.00)</li>
           </ul>
           <p className="mt-3 font-semibold" style={{ color: palette.secondary }}>
             *We are unable to accept any other forms of insurance. This includes out-of-network plans and single-case agreements due to overwhelming requests.
