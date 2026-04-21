@@ -57,7 +57,6 @@ export default function Intakes({ palette }: IntakesProps) {
             <li>• Cigna</li>
             <li>• United Healthcare</li>
             <li>• UMR</li>
-            <li>• Caresource</li>
             <li>• Peachstate (not Ambetter)</li>
             <li>• SSI Medicaid</li>
             <li>• Self-Pay (Cost is approximately $1,500.00)</li>
