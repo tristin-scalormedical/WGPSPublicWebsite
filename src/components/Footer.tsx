@@ -13,7 +13,8 @@ export default function Footer({ palette }: FooterProps) {
         <p className="text-lg">
           6264 Hospital Way<br />
           Douglasville, Georgia 30134<br />
-          Office: (678) 977-8300
+          Office: (678) 977-8300<br />
+          Fax: (866) 489-2642 
         </p>
       </div>
     </footer>
